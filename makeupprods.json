@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Iris Eyeshadow",
+      "price": 39.99,
+      "model": "IRIS123",
+      "brand": "BeautyCo",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Rose Blush",
+      "price": 49.90,
+      "model": "BLUSH456",
+      "brand": "GlamourCosmetics",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Hydrating Foundation",
+      "price": 79.99,
+      "model": "FOUNDATION789",
+      "brand": "LuxuryMakeup",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Lengthening Mascara",
+      "price": 29.95,
+      "model": "MASCARA321",
+      "brand": "ChicBeauty",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Gel-Like Liquid Eyeliner",
+      "price": 34.50,
+      "model": "GELLINER789",
+      "brand": "StyleMeUp",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Matte Setting Powder",
+      "price": 42.75,
+      "model": "MATTEPOWDER555",
+      "brand": "EleganceCosmetics",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Long-Wearing Lip Stain",
+      "price": 36.50,
+      "model": "LIPSTAIN777",
+      "brand": "TrendyLips",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Bronzing Powder",
+      "price": 45.99,
+      "model": "BRONZER888",
+      "brand": "SunKissedBeauty",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Define and Fill Brow Gel",
+      "price": 55.00,
+      "model": "GELBROW777",
+      "brand": "BoldBrows",
+      "user_id":"656846c8327836caa1c9dbe3"
+    },
+    {
+      "name": "Professional Brush Set",
+      "price": 89.99,
+      "model": "BRUSHSET123",
+      "brand": "ProMakeupTools",
+      "user_id":"656846c8327836caa1c9dbe3"
+    }]
+
+   

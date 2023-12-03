@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>index</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-white ">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+           <div class="icon"></div>
+          </li>
+          <li class="nav-item">
+            <a style="font-size: large;" class="nav-link" href="#users">Users</a>
+          </li>
+          <li class="nav-item">
+            <a  style="font-size: large;"class="nav-link" href="#makeup">MakeUp Products</a>
+          </li>
+        </ul>
+      </div>
+    </nav>  <div class="container">
+    <div class="backGroungPic">
+      <h1 class="display-3"><span style="color: white;">Welcome</span> to my documentation</h1>
+    </div>
+    <main>
+    <div> link to rhe server side </div>
+    <div class="title" id="users">Users Router</div>
+  
+    <table class="mytable table table-bordered" >
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>URL</th>
+          <th>Body</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GET</td>
+          <td>/users/</td>
+          <td>none</td>
+          <td>Only admin get all the users information-by token</td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>/users/myInfo</td>
+          <td>none</td>
+          <td>Get your own information-by token</td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>users/</td>
+          <td> firstName: "David",<br>
+            lastName: "Cohen",<br>
+            address: "USA woshington DC",<br>
+            email: "david@gamil.com",<br>
+            password: "123456"
+          </td>
+          <td>Add new user to the database</td>
+        </tr>
+
+        <tr>
+          <td>POST</td>
+          <td>users/login</td>
+          <td>email: "david@gamil.com",<br>
+            password: "123456"</td>
+          <td>User login, if the email and password are correct the server will respond with a token</td>
+        </tr>
+
+        <tr>
+          <td>PUT</td>
+          <td>users/:idEdit</td>
+          <td>firstName: "David",<br>
+            lastName: "Cohen",<br>
+            address: "USA woshington DC",<br>
+            email: "david@gamil.com",<br>
+            password: "123456"</td>
+          <td>User can update his data by id and login, and admin can update all users data</td>
+        </tr>
+
+        <tr>
+          <td>Delete</td>
+          <td>users/:idDel</td>
+          <td>none</td>
+          <td>User can delete his data by id and login, and admin can delete all users data</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <br>
+<br>
+<br>
+    <div class="title" id="makeup">Make up products Router</div>
+    <p style="font-size: large;border-bottom: 2px solid black; width: 280px;">Quary attribute for get requests:</p>
+    <ul>
+      <li>PerPage : you can select the amount of obj per one page.</li>
+      <li>Page : you can select the num of pages you want.</li>
+      <li>Sort : you can select how to make your sort - by Price / ID / Name / Cat.</li>
+      <li>Reverse : you can choose the sort dirction.</li>
+    </ul>
+    <table class=" mytable table table-bordered" >
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>URL</th>
+          <th>Body</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GET</td>
+          <td>/makeupprods/</td>
+          <td>none</td>
+          <td>Get all make up products information</td>
+        </tr>
+        <tr>
+          <td>GET</td>
+          <td>/users/myInfo</td>
+          <td>none</td>
+          <td>Get your own information-by token</td>
+        </tr>
+        <tr>
+          <td>POST</td>
+          <td>/makeupprods/</td>
+          <td> 
+            name: "lipstick mac ",<br>
+            price: 88,<br>
+            model: "rose452",<br>
+            brand: "mac",<br>
+            category:"Lipstick"<br>
+          </td>
+          <td>Add new make up product to the database</td>
+        </tr>
+
+        <tr>
+          <td>PUT</td>
+          <td>makeupprods/:idEdit</td>
+          <td>  name: "lipstick mac ",<br>
+            price: 88,<br>
+            model: "rose452",<br>
+            brand: "mac",<br>
+            category:"Lipstick"<br></td>
+          <td>update product by id-requrie token of the one who create it. User can update his products and admin can update all products data</td>
+        </tr>
+
+
+        <tr>
+          <td>DELETE</td>
+          <td>makeupprods/:Delid</td>
+          <td>  name: "lipstick mac ",<br>
+            price: 88,<br>
+            model: "rose452",<br>
+            brand: "mac",<br>
+            category:"Lipstick"<br></td>
+          <td>Delete product by id-requrie token of the one who create it. User can update his products and admin can update all products data</td>
+        </tr>
+
+
+
+        <tr>
+          <td>GET</td>
+          <td>makeupprods/:search?s=name</td>
+          <td>none</td>
+          <td>Get list of products by name using quary</td>
+        </tr>
+
+        <tr>
+          <td>GET</td>
+          <td>makeupprods/category/:catName?page=1</td>
+          <td>none</td>
+          <td>Get list of products by category using quary and params. <strong>10 product per page</strong></td>
+        </tr>
+
+        <tr>
+          <td>GET</td>
+          <td>makeupprods/price/?max=15&min=1&page=1</td>
+          <td>none</td>
+          <td>Get list of products by price between min and max. page-page number.<strong>10 product per page </strong></td>
+        </tr>
+
+
+        <tr>
+          <td>GET</td>
+          <td>makeupprods/single/:id</td>
+          <td>none</td>
+          <td>Get product by id</td>
+        </tr>
+      </tbody>
+    </table>
+  </div></main>
+  <footer class="container ">
+  All rights-Hadar ochana 2023
+  </footer>
+</body>
+
+</html>
+
+<!-- ניתן לייצר את הדוקומנטציה כאן -->
