@@ -95,13 +95,14 @@ router.put("/:idEdit", auth, async (req, res) => {
     else {
       if (idEdit == req.tokenData._id)
         data = await UserModel.updateOne({ _id:req.tokenData._id }, user)
+      else{ return res.json({msg:"your token and your id in  the url arnt match "});}
     }
     if (data.modifiedCount == 1)
       res.json(data);
   }
   catch (err) {
     console.log(err)
-    res.status(500).json({ msg: "maybe this is not your id?", err })
+    res.status(500).json({ msg: "err", err })
   }
 })
 router.delete("/:idDel", auth, async (req, res) => {
@@ -112,6 +113,7 @@ router.delete("/:idDel", auth, async (req, res) => {
     else {
       if (idDel == req.tokenData._id)
         data = await UserModel.deleteOne({ _id: req.tokenData._id })
+        else{ return res.json({msg:"your token and your id in  the url arnt match "});}
     }
     if (data.deletedCount == 1)
       res.json(data);
@@ -119,7 +121,7 @@ router.delete("/:idDel", auth, async (req, res) => {
 
   catch (err) {
     console.log(err)
-    res.status(500).json({ msg: "maybe this is not your id?", err })
+    res.status(500).json({ msg: "err", err })
   }
 })
 module.exports = router;
