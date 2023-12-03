@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script  defer src="index.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="index.css">
   <title>index</title>
 </head>
@@ -26,12 +30,12 @@
           </li>
         </ul>
       </div>
-    </nav>  <div class="container">
+    </nav>  <div class="container mt-2">
     <div class="backGroungPic">
       <h1 class="display-3"><span style="color: white;">Welcome</span> to my documentation</h1>
     </div>
     <main>
-    <div> link to rhe server side </div>
+    <div class="display-6 container"><span id="copyText">https://node-project-zmfr.onrender.com</span><i class="fa fa-clipboard"id="mybtn" aria-hidden="true"></i></div>
     <div class="title" id="users">Users Router</div>
   
     <table class="mytable table table-bordered" >
@@ -46,13 +50,13 @@
       <tbody>
         <tr>
           <td>GET</td>
-          <td>/users/</td>
+          <td><a href="https://node-project-zmfr.onrender.com/users/">/users/</a></td>
           <td>none</td>
           <td>Only admin get all the users information-by token</td>
         </tr>
         <tr>
           <td>GET</td>
-          <td>/users/myInfo</td>
+          <td><a href="https://node-project-zmfr.onrender.com/users/myInfo">/users/myInfo</a></td>
           <td>none</td>
           <td>Get your own information-by token</td>
         </tr>
@@ -101,7 +105,7 @@
 <br>
 <br>
     <div class="title" id="makeup">Make up products Router</div>
-    <p style="font-size: large;border-bottom: 2px solid black; width: 280px;">Quary attribute for get requests:</p>
+    <p style="font-size: large;border-bottom: 2px solid black; width: 260px;">Quary attribute for get requests:</p>
     <ul>
       <li>PerPage : you can select the amount of obj per one page.</li>
       <li>Page : you can select the num of pages you want.</li>
@@ -120,15 +124,9 @@
       <tbody>
         <tr>
           <td>GET</td>
-          <td>/makeupprods/</td>
+          <td><a href="https://node-project-zmfr.onrender.com/makeupprods/">/makeupprods/</a></td>
           <td>none</td>
           <td>Get all make up products information</td>
-        </tr>
-        <tr>
-          <td>GET</td>
-          <td>/users/myInfo</td>
-          <td>none</td>
-          <td>Get your own information-by token</td>
         </tr>
         <tr>
           <td>POST</td>
@@ -170,21 +168,21 @@
 
         <tr>
           <td>GET</td>
-          <td>makeupprods/:search?s=name</td>
+          <td><a href="https://node-project-zmfr.onrender.com/makeupprods/search?s=powder">makeupprods/search?s=name</a></td>
           <td>none</td>
           <td>Get list of products by name using quary</td>
         </tr>
 
         <tr>
           <td>GET</td>
-          <td>makeupprods/category/:catName?page=1</td>
+          <td><a href="https://node-project-zmfr.onrender.com/makeupprods/category/powder?page=1">makeupprods/category/:catName?page=1</a></td>
           <td>none</td>
           <td>Get list of products by category using quary and params. <strong>10 product per page</strong></td>
         </tr>
 
         <tr>
           <td>GET</td>
-          <td>makeupprods/price/?max=15&min=1&page=1</td>
+          <td><a href="https://node-project-zmfr.onrender.com/makeupprods/price/?max=15&min=1&page=1">makeupprods/price/?max=15&min=1&page=1</a></td>
           <td>none</td>
           <td>Get list of products by price between min and max. page-page number.<strong>10 product per page </strong></td>
         </tr>
@@ -192,7 +190,7 @@
 
         <tr>
           <td>GET</td>
-          <td>makeupprods/single/:id</td>
+          <td><a href="https://node-project-zmfr.onrender.com/makeupprods/single/6568475cabeeeb559c2f55a9">makeupprods/single/:id</a></td>
           <td>none</td>
           <td>Get product by id</td>
         </tr>
@@ -201,9 +199,10 @@
   </div></main>
   <footer class="container ">
   All rights-Hadar ochana 2023
+  <a target="_blank" href="https://www.linkedin.com/in/hadar-ochana-317ab5247/">
+    <i  style="height: inherit;" class="fa fa-linkedin-square" aria-hidden="true"></i>
+</a>
   </footer>
 </body>
 
 </html>
-
-<!-- ניתן לייצר את הדוקומנטציה כאן -->
