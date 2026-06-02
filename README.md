@@ -124,7 +124,3 @@ https://node-project-zmfr.onrender.com/
 **Hadar Ochana** * M.Sc. Computer Science Student
 
 * Software Developer
-
-```
-
-```
